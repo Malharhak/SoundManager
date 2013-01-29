@@ -373,7 +373,11 @@ define([], function () {
 			}
 		}
 
+		this.init = function (path) {
+			this.soundsPath = path;
+		}
+
 	}
 
-	return new SoundManager("snd/");
+	return new SoundManager();
 });

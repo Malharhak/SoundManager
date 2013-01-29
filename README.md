@@ -4,15 +4,17 @@ Javascript Sound Manager - Works on most of the browser and supports multi chann
 
 ##How to :
 
-1. Create an object containing your sound references and url. The sound manager finds the extension : 
+1. Initialize the sound manager with your base sound path
+
+		soundManager.init("snds/"); // Your base sound path
+
+
+2. Create an object containing your sound references and url. The sound manager finds the extension : 
 	
 		var mySounds = [
-			["mainMusic", "snd/music1"],
-			["loseSound", "snd/gameover."]
+			["mainMusic", "music1"], // mainMusic is the reference you will use to play the song, and music1 its path
+			["loseSound", "sfx/gameover."]
 		];
-
-2. Fill the soundManager with your sounds
-
 		soundManager.pushSounds(mySounds); 
 
 3. Check if the sounds are loaded :
