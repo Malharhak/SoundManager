@@ -1,6 +1,6 @@
-define(["CONFIG", "Loader"], function (CONFIG, loader) {
+define([], function () {
     
-	function SoundManager(soundsPath){
+	function SoundManager(){
 		
 		/*
 			variable: soundList
@@ -126,7 +126,6 @@ define(["CONFIG", "Loader"], function (CONFIG, loader) {
 						x.load();
 
 					var name = p[0];
-					loader.addObject("sound"+name, "ressource");
 					x.addEventListener('canplaythrough', currentLoader.loadSound(name), false);
 
 					if (x.canPlayType){
@@ -342,7 +341,6 @@ define(["CONFIG", "Loader"], function (CONFIG, loader) {
 				}			
 				p.times[i] = 0;
 			}
-			loader.itsOkFor("sound"+name, "ressource");
 			//currentLoader.pause(name);
 			this.soundLoaded++;
 
@@ -377,5 +375,5 @@ define(["CONFIG", "Loader"], function (CONFIG, loader) {
 
 	}
 
-	return new SoundManager(CONFIG.soundsFolder);
+	return new SoundManager("snd/");
 });
