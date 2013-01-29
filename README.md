@@ -21,26 +21,26 @@ Javascript Sound Manager - Works on most of the browser and supports multi chann
 	
 		soundManager.isLoaded(); // True if loading is finished, else false
 
-4. If you sounds are loaded, use them !
+4. If your sounds are loaded, use them !
 	
 		soundManager.play('mainMusic');
 
 
-*You can do a lot of  other things, like :
+5. You can do a lot of  other things, like :
 	
 	1. Activation / Desactivation
 
-		soundManager.desactivate('mySound'); // Desactivates (and mute) the sound
-		soundManager.activate('mySound'); // Reactivates (and unmute) the sound
-		soundManager.pause('mySound'); // Pauses the sound. Use play to relaunch the sound.
-		soundManager.shutDown(); // Shuts down the sound manager (stops any sound) or, if already shutdown, reactivates it.
+		    soundManager.desactivate('mySound'); // Desactivates (and mute) the sound
+		    soundManager.activate('mySound'); // Reactivates (and unmute) the sound
+		    soundManager.pause('mySound'); // Pauses the sound. Use play to relaunch the sound.
+		    soundManager.shutDown(); // Shuts down the sound manager (stops any sound) or, if already shutdown, reactivates it.
 
 	2. Volume
 
-		soundManager.setVolume('mySound'); // Sets the volume of a sound - Between 0 and 1
-		soundManager.lowVolume(); // Lower the volume by 10%
-		soundManager.upVolume(); // Up the volume by 10%
+		    soundManager.setVolume('mySound'); // Sets the volume of a sound - Between 0 and 1
+		    soundManager.lowVolume(); // Lower the volume by 10%
+		    soundManager.upVolume(); // Up the volume by 10%
 
 	3. Loading
 
-		soundManager.getLoadPercentage(); // Returns the current loading percentage, if for exemple you wanna make a loading bar.
+		    soundManager.getLoadPercentage(); // Returns the current loading percentage, if for exemple you wanna make a loading bar.
