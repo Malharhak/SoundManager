@@ -54,7 +54,6 @@ define([], function () {
 					str - The string to log
 		*/
 		this.log = function(str){
-			if (CONFIG.debug)
 				console.log("[NLSounds] " + str);
 		}
 		/*
