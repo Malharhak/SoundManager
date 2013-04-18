@@ -20,12 +20,7 @@ define([], function () {
 		this.soundList = [];
 
 		this.channels = 3;
-		/*
-			variable: soundsPath
-
-			A string containing the base path for sounds
-		*/
-		this.soundsPath = soundsPath;
+		
 
 		/*
 			variable: numbersounds
@@ -47,10 +42,7 @@ define([], function () {
 		*/
 		this.soundLoaded = 0;
 
-		if (soundsPath === undefined)
-		{
-			this.soundsPath = "snds/";
-		}
+		this.soundsPath = "snds/";
 
 		/*
 			Function: log(str)
