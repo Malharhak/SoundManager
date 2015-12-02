@@ -1,5 +1,7 @@
 #SoundManager
 
+**This is old.** You'd better use [`howler.js`](http://goldfirestudios.com/blog/104/howler.js-Modern-Web-Audio-Javascript-Library)
+
 Javascript Sound Manager - Works on most of the browser and supports multi channel.
 
 ##How to :
